@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<!--Head-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Nardos Tekle Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<!--Body -->
+
+<body class="Background">
+
+    <!--Navbar-->
+    <div class="Navbar">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Projects">Project</a>
+        <a href="#Slideshow">Slideshow</a>
+        <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+    </div>
+
+    <!--Breaks inserted to add space between navbar and the first heading-->
+
+    <!--Background video-->
+    <div id="Home">
+        <video autoplay muted loop id="Typing_Video">
+            <source src="Media/Typing.mp4" type="video/mp4">
+            <!--Display message if video fails to run-->
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
+
+    <!--Video text-->
+    <div class="Video_Text">
+        <h1 class="white-text">Welcome - I'm Nardos Tekle</h1>
+        <strong>
+            <p class="center">
+                I’m a data science enthusiast with a passion for tech, storytelling, and building people-centered solutions. 
+                This portfolio highlights my journey, from hands-on projects to the skills and values that drive my work. 
+                Dive in, explore what I’ve built, and feel free to reach out — I’m glad you’re here.
+                <br>
+                <br>
+
+                <div class="image">
+                <img class="slideshow_images" src="Media/Person.jpg"
+                        alt="Picture of myself at the public market holding a fresh bouqet of flowers">
+                </div>
+            </p>
+        </strong>
+    </div>
+    <!--Slide-show portion-->
+    <div id="Slideshow" >
+        <div id="slideshow_background">
+            <div id="slideshow_container">
+                <!--Slide 1 of 6-->
+                <div class="mySlides  fade" style="display: block;">
+                    <img class="slideshow_images" src="Media/full-stack.png" alt="HTML, CSS, and JS logo">
+                    <div class="text"> I am a full-stack software developer, <br> trained in: <br> HTML, CSS,
+                        JavaScript.</div>
+                </div>
+                <!--Slide 2 of 6-->
+                <div class="mySlides  fade" style="display: block;">
+                    <img class="slideshow_images" src="Media/python.png" alt="Python logo">
+                    <div class="text"> The popular programming language Python,</div>
+                </div>
+                <!--Slide 3 of 6-->
+                <div class="mySlides  fade" style="display: block;">
+                    <img class="slideshow_images" src="Media/C_sharp.png" alt="C-sharp logo">
+                    <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                </div>
+                <!--Slide 4 of 6-->
+                <div class="mySlides  fade" style="display: block;">
+                    <img class="slideshow_images" src="Media/SQL-logo.jpg" alt="SQL logo">
+                    <div class="text"> Backend development, databases and SQL.</div>
+                </div>
+
+                <!--Slide 5 of 6-->
+                <div class="mySlides fade" style="display: block;">
+                    <img class="slideshow_images" src="Media/datavislogo-ezgif.com-avif-to-jpg-converter.jpg"
+                        alt="matplotlib, plotly, seaborn, ggplot2, and altair logos.">
+                    <div class="text"> I've also worked with various data visualization tools.</div>
+                </div>
+
+                <!--Slide 6 of 6-->
+                <div class="mySlides  fade" style="display: block;">
+                    <img class="slideshow_images" src="Media/Contactme.jpg" alt="Contact Me!">
+                    <div class="text">
+                        <a class="white-text contact" onclick="openForm()">Would Love To Connect!</a>
+                    </div>
+
+                </div>
+                <a class="Previous" onclick="plusSlides(-1)">❮</a>
+                <a class="Next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br> <!--Adds space betweeen the slideshow images and dots -->
+            <!--Slideshow dots (these are another way for users to navigate through the slideshow)-->
+            <div style="text-align: center">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+        </div>
+    </div>
+    <!--About section-->
+    <div class="Row" id="About">
+        <!--Left column-->
+        <div class="Column_2">
+            <h1>About</h1>
+            <p>
+                    Based in Seattle, Washington, I’m a software developer with a focus in data science and a strong foundation in public health. 
+                    I’m a proud UW Husky and graduate with a degree in Public Health, where I was first introduced to informatics and data-driven research.
+                    That experience sparked my passion for technology and inspired me to further develop my skills through 
+                    <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Data Science Boot Camp.
+                    <br>
+                    <br>
+                    <br>
+                    I am now fully trained in full-stack development and experienced in programming languages and data visualization tools. 
+                    I’m excited to bring this unique blend of public health insight and technical skill to mission-driven work and creative tech solutions.
+            </p>
+                  
+        </div>
+       <!--Right column-->
+      
+        <div class="Column_1">
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src="Media/Untitled design.jpg">
+        </div>
+    </div>
+    <!--GitHub section-->
+    <div class="Row" id="Projects">
+        <!--Left column-->
+        <div class="Column_1">
+            <h1>Projects</h1>
+            <p>
+                I’ve worked on a range of projects that showcase both my software development and data science skills. 
+                On the web development side, I’ve built dynamic and interactive websites using HTML, CSS, and JavaScript some of my favorites including a recipe page, a cinema ticketing interface, and an online pizza ordering system. 
+                These projects strengthened my understanding of responsive design, user interaction, and front-end logic.
+             <br>
+             <br>
+             <br>
+               In the realm of data science, I’ve worked extensively with Python, SQL, R, and Power BI to manipulate and analyze large datasets. 
+               During my internship, I used real-world data from the Google Play Store to analyze app install trends, user ratings, and engagement patterns. 
+               This project involved deploying solutions on Microsoft Azure and gave me practical experience in cloud-based data tools and working within a Scrum/Agile environment.
+            </p>
+        </div>
+        <!--Right column-->
+        <div class="Column_2">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>GitHub</h1>
+            <p class="center">
+                You can view these coding/internship projects more in depth on my GitHub profile here:
+                <br>
+                <br>
+                <a href="https://github.com/nardos-tekle" target="_blank">Github</a>
+            </p>
+            <br>
+            <br>
+
+            <h1>LinkedIn</h1>
+            <p class="center">
+                Always eager to learn and collaborate so, connect with me on LinkedIn!
+                <br>
+                <br>
+                <a href="https://www.linkedin.com/in/nardos-tekle-923529264">LinkedIn</a>
+            </p>
+            <br>
+            <br>
+            <br>
+            <h1>Contact Form</h1>
+            <p class="center">
+                If you would like you can also fill a <a onclick="openForm()" class="contact">contact form</a> 
+            to send me a direct message.
+            <br>
+            <br>
+            <br>
+            Thank you for stopping by and looking forward to potentially connect with you!
+
+            </p>
+
+            
+            <!--<a href="https://github.com/nardos-tekle" target="_blank">
+                <img src="Media/GitHub_Invertocat_Dark.png" alt="GitHub logo"></a>-->
+        </div>
+
+    </div>
+    <div id="Contact">
+        <button onclick="openForm()" class="Pop-Up-Button">CONTACT</button>
+        <div class="form-popup" id="myForm" ondblclick="closeForm()" style="display:none;">
+            <form action="https://formspree.io/f/xldelopw" method="POST" class="form-container">
+                <!--https://formspree.io/nardostekl@gmail.com-->
+                <!--Contact section-->
+                <h1>Contact</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                <label for="name">
+                    <b>Name</b>
+                </label>
+                <input type="text" placeholder="Type your name here" name="name">
+                <label for="phone">
+                    <b>Phone</b>
+                </label>
+                <input type="text" placeholder="Type your phone number here" name="phone">
+                <label for="email">
+                    <b>Email</b>
+                </label>
+                <input type="text" placeholder="Type you email address here" name="email" required>
+                <label for="message">
+                    <b>Message</b>
+                </label>
+                <input type="text" placeholder="Type your message here" name="message">
+                <button type="submit" class="btn">SUBMIT</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Footer section-->
+    <footer>
+        <p>
+        <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/"
+                target="_blank">The Tech Academy</a></p>
+        <br>
+        </p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
